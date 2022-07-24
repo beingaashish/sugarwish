@@ -1,0 +1,51 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/**
+Mobile first approach
+**/
+@mixin respond($breakpoint) {
+    @if $breakpoint == atSmall {
+        @media only screen and (min-width: 37.5em) {
+            @content
+        }
+
+        ; //600px and above
+    }
+
+    @if $breakpoint == atMedium {
+        @media only screen and (max-width: 56.25em) {
+            @content
+        }
+
+        ; //900px and above
+    }
+
+    @if $breakpoint == atLarge {
+        @media only screen and (max-width: 75em) {
+            @content
+        }
+
+        ; //1200px and above
+    }
+
+    @if $breakpoint == atXLarge {
+        @media only screen and (min-width: 112.5em) {
+            @content
+        }
+
+        ; //1800px and above
+    }
+}

@@ -1,3 +1,65 @@
-body {
-	color: red;
+:root {
+	--color-primary: #D2232A;
+	--color-text-dark: #2D3333;
+	--color-text-light: #969696;
+	--color-light-gray: #F9F9FB;
+}
+
+/**
+Mobile first approach
+**/
+.wrapper {
+	overflow: hidden;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrapper--full-width {
+	max-width: 100vw;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.row--gutters {
+	margin-right: -66px;
+}
+
+.row--gutters > [class^="col-"] {
+	padding-right: 66px;
+}
+
+.row [class^="col-"] {
+	float: left;
+}
+
+@media only screen and (max-width: 56.25em) {
+	.row .col-md-1 {
+		width: 8.33%;
+	}
+	.row .col-md-2 {
+		width: 16.66%;
+	}
+	.row .col-md-3 {
+		width: 25%;
+	}
+	.row .col-md-4 {
+		width: 33.33%;
+	}
+	.row .col-md-5 {
+		width: 41.65%;
+	}
+	.row .col-md-6 {
+		width: 50%;
+	}
+	.row .col-md-7 {
+		width: 58.3%;
+	}
+	.row .col-md-8 {
+		width: 66.63%;
+	}
 }
