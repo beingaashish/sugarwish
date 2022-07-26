@@ -1,0 +1,84 @@
+.input {
+    --border-color: var(--color-border);
+
+    color: var(--color-text-light);
+    border: 1px solid var(--border-color);
+    outline: none;
+    font-size: 14px;
+    padding: 0.625em 1em;
+    border-radius: 8px;
+    min-height: 40px;
+
+    &:focus {
+        --border-color: #0AF;
+        box-shadow: 0 0 5px 0 var(--border-color);
+    }
+
+    &__success {
+        --border-color: #27AE60;
+
+        &:focus {
+            --border-color: #0F0;
+        }
+    }
+
+    &__error {
+        --border-color: var(--color-primary);
+
+        &:focus {
+            --border-color: #F00;
+        }
+    }
+
+    &:disabled {
+        background-color: var(--color-border);
+    }
+}
+
+.checkbox {
+    position: absolute;
+    left: -99999999px;
+    opacity: 0;
+
+    & + label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    & + label::before {
+    content: '';
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        border-radius: 4px;
+        border: 1px solid var(--color-text-dark);
+    }
+
+    & + label:hover::before {
+            background-color: var(--color-light-gray);
+        }
+
+    &:focus + label::before {
+        box-shadow: 0 0 20px 0 var(--color-gray);
+    }
+
+    &:checked + label::before {
+        content: '✔';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-primary);
+        color: #fff;
+    }
+
+    &:disabled + label {
+        color: var(--color-border);
+        cursor: not-allowed;
+    }
+
+    &:disabled + label::before {
+        background-color: var(--color-light-gray);
+        border-color: var(--color-border);
+    }
+}

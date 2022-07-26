@@ -1,0 +1,35 @@
+body {
+    @include fontFamilyLato;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.page-title {
+    margin-top: 50px;
+    margin-bottom: 16px;
+
+    .cart-page-title {
+        @include fontFamilyMontserrat;
+        font-weight: 600;
+        color: var(--color-text-dark);
+        font-size: 32px;
+        display: inline-flex
+    }
+
+    &__product-recipients-total-count {
+        @include fontFamilyMontserrat;
+        font-weight: 500;
+        font-size: 24px;
+        color: var(--color-text-light);
+    }
+}
+
+.sidebar-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+h3.product-title {
+    font-size: 18px;
+}

@@ -13,6 +13,14 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin fontFamilyLato {
+    font-family: "Lato", sans-serif;
+}
+
+@mixin fontFamilyMontserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /**
 Mobile first approach
 **/
@@ -26,7 +34,7 @@ Mobile first approach
     }
 
     @if $breakpoint == atMedium {
-        @media only screen and (max-width: 56.25em) {
+        @media only screen and (min-width: 56.25em) {
             @content
         }
 
@@ -34,7 +42,7 @@ Mobile first approach
     }
 
     @if $breakpoint == atLarge {
-        @media only screen and (max-width: 75em) {
+        @media only screen and (min-width: 75em) {
             @content
         }
 

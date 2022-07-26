@@ -1,8 +1,10 @@
 .wrapper {
     overflow: hidden;
-    max-width: 1400px;
+    max-width: 1286px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 25px;
+    padding-right: 25px;
 
     &--full-width {
         max-width: 100vw;

@@ -1,0 +1,37 @@
+.site-header {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--color-light-gray);
+
+    &__logo {
+        max-width: 200px;
+        height: auto;
+        margin-right: 60px;
+
+        a {
+            display: block;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__actions {
+        margin-left: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    &__cart {
+        display: block;
+        padding: 20px 0 20px 20px;
+
+        img {
+            display: block;
+        }
+    }
+}

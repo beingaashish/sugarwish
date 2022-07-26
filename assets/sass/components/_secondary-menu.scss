@@ -1,0 +1,45 @@
+.secondary-menu {
+    margin-right: 15px;
+
+    ul {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        position: relative;
+
+        &.has-children {
+            a::after {
+                content: '';
+                height: 24px;
+                width: 25px;
+                position: absolute;
+                right: 10px;
+                background: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.91 8L6.5 9.52227L12.5 16L18.5 9.52227L17.09 8L12.5 12.9447L7.91 8Z' fill='%23D2232A'/%3E%3C/svg%3E%0A") no-repeat;
+                background-position: right 50% top 50%;
+            }
+
+            a {
+                padding-right: 40px
+            }
+        }
+
+        a {
+            @include fontFamilyMontserrat;
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            line-height: 1.25;
+            padding: 20px;
+            font-size: 14px;
+            color: var(--color-text-dark);
+            text-decoration: none;
+        }
+    }
+
+    &__item-text {
+        display: flex;
+        flex-direction: column;
+    }
+}

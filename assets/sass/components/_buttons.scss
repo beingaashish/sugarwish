@@ -1,0 +1,35 @@
+.btn {
+    --button-bg-color: var(--color-primary);
+    --button-text-color: #fff;
+    --button-border: solid 1px transparent;
+
+    @include fontFamilyMontserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    padding: 0.625em 1.25em;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: var(--button-border);
+    text-align: center;
+
+    &--outline {
+        --button-text-color: var(--color-primary);
+        --button-bg-color: transparent;
+        --button-border: solid 1px var(--color-primary);
+    }
+
+    &--large {
+        font-size: 18px;
+    }
+
+    &--full-width {
+        width: 100%;
+        display: block;
+    }
+}

@@ -1,62 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src="assets/js/sugarwish-scripts.min.js" defer></script>
-        <title>Sugar Wish</title>
-    </head>
-    <body>
-        <header id="site-header" class="site-header wrapper wrapper--full-width">
-            <div class="site-header__logo">
-                <a href="#">
-                    <img src="assets/images/logo.svg" alt="" class="header-logo">
-                </a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <script src="assets/js/sugarwish-scripts.min.js" defer></script>
+    <title>Sugar Wish</title>
+</head>
+
+<body>
+    <header id="site-header" class="site-header wrapper wrapper--full-width">
+        <div class="site-header__logo">
+            <a href="#">
+                <img src="assets/images/logo.svg" alt="" class="header-logo">
+            </a>
+        </div>
+        <div class="site-header__menu-content">
+            <nav class="primary-menu">
+                <ul>
+                    <li class="primary-menu__item has-children">
+                        <a href="#">
+                            <img src="assets/images/send-sugar-wish.svg" alt="" class="menu-icon">
+                            <span class="primary-menu__item-text">
+                                <span>Send a</span>
+                                <span>Sugarwish</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="primary-menu__item">
+                        <a href="#">
+                            <span class="primary-menu__item-text">
+                                <span>What is a</span>
+                                <span>Sugarwish?</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="primary-menu__item">
+                        <a href="#">
+                            <span class="primary-menu__item-text">
+                                <span>Corporate</span>
+                                <span>Gifting</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="site-header__actions">
+            <nav class="secondary-menu">
+                <ul>
+                    <li class="secondary-menu__item has-children">
+                        <a href="#">
+                            <span class="secondary-menu__item-text">
+                                <span>We <img src="assets/images/heart.svg" alt="" class="menu-icon"></span>
+                                <span>Company Name</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="site-header__cart">
+                <img src="assets/images/cart.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <main id="main" class="main">
+        <div class="wrapper">
+            <div class="row row--gutters">
+                <div class="col-md-8">
+                    <div class="page-title">
+                        <h2 class="cart-page-title">Shopping Cart </h2>
+                        <span class="page-title__product-recipients-total-count">
+                            (<span class="total">6</span> items)
+                        </span>
+                    </div>
+
+                    <section class="shopping-cart">
+                        <div class="shopping-cart__item">
+                            <div class="shopping-cart__product-summary" data-target="shopping-cart__proudct-recipients">
+                                <figure class="product-thumbnail">
+                                    <img src="assets/images/cookie.png" alt="">
+                                </figure>
+                                <div class="product-info">
+                                    <div class="product-details">
+                                        <h3 class="product-title">2-pick Cookies</h3>
+                                        <div class="product-price"><span class="amount">$21.98</span>per item</div>
+                                    </div>
+                                    <div class="product-recipients-count">
+                                        <span class="total">3</span> recipients
+                                    </div>
+                                    <div class="product-total-price">
+                                        <span class="amount">$131.88</span> total
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="shopping-cart__product-recipients-table recipients-table">
+                                <thead>
+                                    <tr>
+                                        <th class="recipients-card-details">Card</th>
+                                        <th class="recipients-details">Recipient</th>
+                                        <th class="recipients-email">Email</th>
+                                        <th class="card-delivery-date">Date</th>
+                                        <th class="card-shipping-detail">Ship to CA</th>
+                                        <th class="recipients-table-options">Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="recipients-card-thumbnail">
+                                            <img src="assets/images/birthday-card.png" alt="">
+                                        </td>
+                                        <td class="recipients-name">
+                                            Jane Champion
+                                        </td>
+                                        <td class="recipients-email">
+                                            janechampion@gmail.com
+                                        </td>
+                                        <td class="card-delivery-date">
+                                            12/23/2020
+                                        </td>
+                                        <td class="card-shipping-detail">
+                                            /
+                                        </td>
+                                        <td class="recipients-table-options">
+                                            <a href="#" class="recipients-table-options__preview">Preview</a>
+                                            <a href="#" class="recipients-table-options__edit"><img
+                                                    src="assets/images/edit.svg" alt=""></a>
+                                            <a href="#" class="recipients-table-options__remove"><img
+                                                    src="assets/images/close.svg" alt=""></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="recipients-card-thumbnail">
+                                            <img src="assets/images/birthday-card.png" alt="">
+                                        </td>
+                                        <td class="recipients-name">
+                                            Jane Champion
+                                        </td>
+                                        <td class="recipients-email send-by-message">
+                                            Send by messaging*
+                                        </td>
+                                        <td class="card-delivery-date">
+                                            12/23/2020
+                                        </td>
+                                        <td class="card-shipping-detail">
+                                            /
+                                        </td>
+                                        <td class="recipients-table-options">
+                                            <a href="#" class="recipients-table-options__preview">Preview</a>
+                                            <a href="#" class="recipients-table-options__edit">
+                                                <img src="assets/images/edit.svg" alt="">
+                                            </a>
+                                            <a href="#" class="recipients-table-options__remove">
+                                                <img src="assets/images/close.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="recipients-card-thumbnail">
+                                            <img src="assets/images/birthday-card.png" alt="">
+                                        </td>
+                                        <td class="recipients-name">
+                                            Jane Champion
+                                        </td>
+                                        <td class="recipients-email">
+                                            janechampion@gmail.com
+                                        </td>
+                                        <td class="card-delivery-date">
+                                            12/23/2020
+                                        </td>
+                                        <td class="card-shipping-detail">
+                                            /
+                                        </td>
+                                        <td class="recipients-table-options">
+                                            <a href="#" class="recipients-table-options__preview">Preview</a>
+                                            <a href="#" class="recipients-table-options__edit"><img
+                                                    src="assets/images/edit.svg" alt=""></a>
+                                            <a href="#" class="recipients-table-options__remove"><img
+                                                    src="assets/images/close.svg" alt=""></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="recipients-card-thumbnail">
+                                            <img src="assets/images/birthday-card.png" alt="">
+                                        </td>
+                                        <td class="recipients-name">
+                                            Jane Champion
+                                        </td>
+                                        <td class="recipients-email send-by-message">
+                                            Send by messaging*
+                                        </td>
+                                        <td class="card-delivery-date">
+                                            12/23/2020
+                                        </td>
+                                        <td class="card-shipping-detail">
+                                            /
+                                        </td>
+                                        <td class="recipients-table-options">
+                                            <a href="#" class="recipients-table-options__preview">Preview</a>
+                                            <a href="#" class="recipients-table-options__edit">
+                                                <img src="assets/images/edit.svg" alt="">
+                                            </a>
+                                            <a href="#" class="recipients-table-options__remove">
+                                                <img src="assets/images/close.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="shopping-cart__item">
+                            <div class="shopping-cart__product-summary" data-target="shopping-cart__proudct-recipients">
+                                <figure class="product-thumbnail">
+                                    <img src="assets/images/cookie.png" alt="">
+                                </figure>
+                                <div class="product-info">
+                                    <div class="product-details">
+                                        <h3 class="product-title">6-pick Cookies</h3>
+                                        <div class="product-price"><span class="amount">$43.98</span>per item</div>
+                                    </div>
+                                    <div class="product-recipients-count">
+                                        <span class="total">4</span> recipients
+                                    </div>
+                                    <div class="product-total-price">
+                                        <span class="amount">$131.88</span> total
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="shopping-cart__product-recipients-table recipients-table">
+                                <thead>
+                                    <tr>
+                                        <th class="recipients-card-details">Card</th>
+                                        <th class="recipients-details">Recipient</th>
+                                        <th class="recipients-email">Email</th>
+                                        <th class="card-delivery-date">Date</th>
+                                        <th class="card-shipping-detail">Ship to CA</th>
+                                        <th class="recipients-table-options">Options</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="recipients-card-thumbnail">
+                                            <img src="assets/images/birthday-card.png" alt="">
+                                        </td>
+                                        <td class="recipients-name">
+                                            Jane Champion
+                                        </td>
+                                        <td class="recipients-email">
+                                            janechampion@gmail.com
+                                        </td>
+                                        <td class="card-delivery-date">
+                                            12/23/2020
+                                        </td>
+                                        <td class="card-shipping-detail">
+                                            /
+                                        </td>
+                                        <td class="recipients-table-options">
+                                            <a href="#" class="recipients-table-options__preview">Preview</a>
+                                            <a href="#" class="recipients-table-options__edit"><img
+                                                    src="assets/images/edit.svg" alt=""></a>
+                                            <a href="#" class="recipients-table-options__remove"><img
+                                                    src="assets/images/close.svg" alt=""></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="recipients-card-thumbnail">
+                                            <img src="assets/images/birthday-card.png" alt="">
+                                        </td>
+                                        <td class="recipients-name">
+                                            Jane Champion
+                                        </td>
+                                        <td class="recipients-email send-by-message">
+                                            Send by messaging*
+                                        </td>
+                                        <td class="card-delivery-date">
+                                            12/23/2020
+                                        </td>
+                                        <td class="card-shipping-detail">
+                                            /
+                                        </td>
+                                        <td class="recipients-table-options">
+                                            <a href="#" class="recipients-table-options__preview">Preview</a>
+                                            <a href="#" class="recipients-table-options__edit">
+                                                <img src="assets/images/edit.svg" alt="">
+                                            </a>
+                                            <a href="#" class="recipients-table-options__remove">
+                                                <img src="assets/images/close.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="recipients-card-thumbnail">
+                                            <img src="assets/images/birthday-card.png" alt="">
+                                        </td>
+                                        <td class="recipients-name">
+                                            Jane Champion
+                                        </td>
+                                        <td class="recipients-email">
+                                            janechampion@gmail.com
+                                        </td>
+                                        <td class="card-delivery-date">
+                                            12/23/2020
+                                        </td>
+                                        <td class="card-shipping-detail">
+                                            /
+                                        </td>
+                                        <td class="recipients-table-options">
+                                            <a href="#" class="recipients-table-options__preview">Preview</a>
+                                            <a href="#" class="recipients-table-options__edit"><img
+                                                    src="assets/images/edit.svg" alt=""></a>
+                                            <a href="#" class="recipients-table-options__remove"><img
+                                                    src="assets/images/close.svg" alt=""></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="recipients-card-thumbnail">
+                                            <img src="assets/images/birthday-card.png" alt="">
+                                        </td>
+                                        <td class="recipients-name">
+                                            Jane Champion
+                                        </td>
+                                        <td class="recipients-email print-card">
+                                            Print Card*
+                                        </td>
+                                        <td class="card-delivery-date">
+                                            12/23/2020
+                                        </td>
+                                        <td class="card-shipping-detail">
+                                            /
+                                        </td>
+                                        <td class="recipients-table-options">
+                                            <a href="#" class="recipients-table-options__preview">Preview</a>
+                                            <a href="#" class="recipients-table-options__edit">
+                                                <img src="assets/images/edit.svg" alt="">
+                                            </a>
+                                            <a href="#" class="recipients-table-options__remove">
+                                                <img src="assets/images/close.svg" alt="">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="message-info">* Once your order is complete you will receive a link and instructions
+                            for sending the Sugarwish through Messaging or
+                            for the printed card.</p>
+                    </section>
+                </div>
+                <div class="col-md-4">
+                    <div class="order-summary">
+                        <h2 class="sidebar-title">Order Summary</h2>
+                        <table class="order-details-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="border-after">Order Items</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="product-title">2-Pick Cookies<span>x</span><span
+                                            class="product-recipients-count">3</span></td>
+                                    <td class="product-total-price alignright"><span class="amount">$131.88</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="product-title">2-Pick Cookies<span>x</span><span
+                                            class="product-recipients-count">3</span></td>
+                                    <td class="product-total-price alignright"><span class="amount">$131.88</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="shipping-details-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="border-after">Shipping</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="card-shipping-detail">Shipping to USA</td>
+                                    <td class="card-shipping-price alignright">Free</td>
+                                </tr>
+                                <tr>
+                                    <td class="card-shipping-detail">Shipping to Canada</td>
+                                    <td class="card-shipping-price alignright"><span class="amount">$30.00</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="shopping-cart-total">
+                            <thead>
+                                <tr class="border-before">
+                                    <th>Total Cost</th>
+                                    <th class="order-total alignright"><span class="amount">$370</span></th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <form action="" class="checkout-coupon">
+                            <input type="text" class="input mr-small" placeholder="Promo Code">
+                            <button type="submit" class="btn btn--outline">Apply</button>
+                        </form>
+                        <form action="" class="expedited-shipping">
+                            <div class="input-group">
+                                <input class="checkbox" type="checkbox" id="expedited-shipping-checkbox">
+                                <label for="expedited-shipping-checkbox">Expedited shipping (&plus;<span class="text-dim">$10</span>)</label>
+                            </div>
+                            <a href="#">What is expedited shipping?</a>
+                            <img src="assets/images/local-shipping.svg" class="inline-icon" alt="">
+                        </form>
+                        <div class="proceed-to-checkout">
+                            <a href="#" class="btn btn--large btn--full-width proceed-to-checkout__btn">Proceed to checkout</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="site-header__menu-content">
-                <nav class="primary-menu">
-                    <ul>
-                        <li class="primary-menu__item has-children">
-                            <a href="#">
-                                <img src="assets/images/send-sugar-wish.svg" alt="">
-                                <span class="primary-menu__item-text">Send a</span>
-                                <span class="primary-menu__item-text">Sugarwish</span>
-                            </a>
-                        </li>
-                        <li class="primary-menu__item">
-                            <a href="#">
-                                <span class="primary-menu__item-text">What is a</span>
-                                <span class="primary-menu__item-text">Sugarwish</span>
-                            </a>
-                        </li>
-                        <li class="primary-menu__item">
-                            <a href="#">
-                                <span class="primary-menu__item-text">Corporate</span>
-                                <span class="primary-menu__item-text">Gifting</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="site-header__actions">
-                <nav class="side-nav">
-                    <ul>
-                        <li class="side-nav__menu-item has-children">
-                            <a href="#">
-                                <span class="side-nav__item-text">We <img src="assets/images/heart.svg" alt=""></span>
-                                <span class="side-nav__item-text">Company Name</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#" class="site-header__cart">
-                    <img src="assets/images/cart.svg" alt="">
-                </a>
-            </div>
-        </header>
-        <main></main>
-        <footer></footer>
-    </body>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
 </html>

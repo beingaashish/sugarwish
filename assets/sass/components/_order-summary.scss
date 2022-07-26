@@ -1,0 +1,64 @@
+.order-summary {
+    background-color: var(--color-light-gray);
+    border-top: solid 1px var(--color-primary);
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    padding: 48px 32px;
+
+    table {
+        border: none;
+        margin-bottom: 32px;
+    }
+
+    thead {
+        border-bottom: solid 1px var(--color-border);
+    }
+
+    th {
+        font-size: 16px;
+        font-weight: 500;
+        padding: 8px 0 8px 0;
+    }
+
+    td {
+        padding: 3px 3px 3px 0;
+    }
+
+    tr {
+        position: relative;
+    }
+}
+
+.expedited-shipping {
+    position: relative;
+    background-color: #fff;
+    border: solid 1px var(--color-border-light);
+    padding: 16px;
+    border-radius: 8px;
+    padding-right: 50px;
+
+    .input-group {
+        margin-bottom: 10px;
+    }
+
+    .inline-icon {
+        position: absolute;
+        right: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.shopping-cart-total {
+    margin-bottom: 48px;
+
+    th {
+        color: var(--color-text-dark);
+        font-weight: 500;
+    }
+}
+
+.checkout-coupon,
+.expedited-shipping {
+    margin-bottom: 48px;
+}

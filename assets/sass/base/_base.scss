@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 1rem;
+}
+
+body {
+    box-sizing: border-box;
+    color: var(--color-text-dark);
+}
+
+::selection {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include fontFamilyMontserrat;
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+    border: solid 1px var(--color-light-gray);
+    border-spacing: 0;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px 0px 8px 16px;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+th {
+    @include fontFamilyMontserrat;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--color-text-light);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
